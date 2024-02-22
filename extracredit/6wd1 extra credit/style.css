@@ -1,0 +1,30 @@
+/* This is my CSS Style Code*/
+
+header {
+    font-family:cursive;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(89, 192, 196); /*Light Blue*/
+    color: black; /*Black*/
+    text-align: center;
+}
+
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #8dc08b; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+nav {background-color: #2b4931; /*Dark Green background*/
+    padding: 10px;
+    text-align: center;
+}
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #a8cfab; /* White section background */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(5, 46, 1, 0.1); /* Soft shadow */
+}

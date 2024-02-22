@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+    width: 100%;
+.one{color:cadetblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;} 
+
+.two{color:brown; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+.three{color:darkblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+.four{color:chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+}
