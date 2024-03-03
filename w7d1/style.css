@@ -1,0 +1,32 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #8dc08b; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+header {
+    background-color: #500e50; /* purpleish header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header h2 {
+    color: #ff0037;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #a8c9cf; /* White section background */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(5, 46, 1, 0.1); /* Soft shadow */
+}
+
+
+
+nav a:hover {
+    background-color: #ff0015; /* Darker orange on hover */
+}

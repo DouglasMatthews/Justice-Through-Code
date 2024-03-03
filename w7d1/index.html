@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas Matthews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container text-center my-4">
+    <h1><img src="Higher Edu. in prison (1).jpg" alt="Higher Ed. in Library" width="225" height="300">&nbsp&nbsp&nbsp&nbsp&nbspDouglas Matthews&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Higher Edu. in prison (2).jpg" alt="Higher Ed. in Classroom" width="225" height="300"></h1>
+    <h2>Where it all began...</h2>
+</header>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <section id="introduction">
+        <h3>Introduction</h3>
+        <p>My name is Douglas Matthews. I have a strong desire to improve my skills in <strong>Data analytics</strong>...</p>
+    </section>
+
+    <section id="background">
+        <h3>Background and Education</h3>
+        <p>As a <em>former incarcerated individual</em> who gained an education inside prison...</p>
+    </section>
+
+    <section id="interests">
+        <h3>Interests and Hobbies</h3>
+        <p>I work to improve my skills to be a value-add to society...</p>
+    </section>
+
+    <section id="experience">
+        <h3>Professional Experience</h3>
+        <p>Former Correctional Officer and Union President, incarcerated individual leading and creating program...</p>
+    </section>
+</div>
+  
+<!-- Adding a Bootstrap button for JavaScript interaction -->
+<div class="container">
+    <button type="button" class="btn btn-primary rounded-pill px-3" id="changeColorButton">Change Background</button>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<button id="get-data-button">Get Data (scroll down after click)</button></div>
+<div id="data-container"></div>
+<script>
+  const getDataButton = document.getElementById('get-data-button');
+  const dataContainer = document.getElementById('data-container');
+  getDataButton.addEventListener('click', async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+    const data = await response.json();
+    let output = '';
+    for (const post of data) {
+      output += `
+        <h3>${post.name}</h3>
+        <p>${post.body}</p>
+        <p>${post.email}</p>
+      `;
+    }
+    dataContainer.innerHTML = output;
+  });
+</script>
+</body>
+</html>
